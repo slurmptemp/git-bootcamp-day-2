@@ -1,0 +1,16 @@
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/.supersecretdirnoonewillfind/.supersecretkey
+    AddKeysToAgent yes
+
+# --- Если SSH на 22 порту заблокирован корпоративным firewall ---
+# https://docs.github.com/en/authentication/troubleshooting-ssh/using-ssh-over-the-https-port
+# Раскомментируйте и используйте этот вариант вместо блока выше.
+#
+# Host github.com
+#     HostName ssh.github.com
+#     User git
+#     Port 443
+#     IdentityFile ~/.ssh/.anothersupersecretdirnoonewillfind/.supersecretkey
+#     AddKeysToAgent yes

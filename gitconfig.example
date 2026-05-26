@@ -1,0 +1,12 @@
+[user]
+	email = akaramyshev@example.com
+	name = akaramyshev
+[core]
+	editor = code --wait
+[init]
+	defaultBranch = main
+[alias]
+	st = status
+	lg = log --oneline --graph --all --decorate
+	last = log -1 HEAD --stat
+	undo = reset HEAD~1 --mixed
